@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <script src="https://use.fontawesome.com/5a7c3b1f91.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css"
+      integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Product Reviews</title>
+  </head>
+  <body>
+    <div class="container body">
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="https://images.unsplash.com/photo-1568354930999-0ed46fc4ab5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="product"
+            width="450"
+          />
+        </div>
+
+        <div class="col-6 align-self-center">
+          <h1>Striped Socks</h1>
+          <p>Price: $350.42</p>
+
+          <ul>
+            <li>COZY AND COMFORTABLE</li>
+            <li>UNIQUE DESIGN</li>
+            <li>ONE SIZE FITS MOST</li>
+            <li>RISK FREE GUARANTEED</li>
+          </ul>
+
+          <div id="avgRating">Average Rating: 0/5 stars</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <h2>About the Product</h2>
+        <p>
+          A sock is a piece of clothing worn on the feet and often covering the
+          ankle or some part of the calf. Some type of shoe or boot is typically
+          worn over socks. In ancient times, socks were made from leather or
+          matted animal hair. In the late 16th century, machine-knit socks were
+          first produced. Until 1800 both hand knitting and machine knitting
+          were used to produce socks, but after 1800, machine knitting became
+          the predominant method.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>Write a Review</h2>
+
+      <div class="row">
+        <div class="col-6">
+          <form onsubmit="submitReview(); return false;">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="comment">Comment</label>
+              <textarea
+                class="form-control commentBox"
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <div class="col-9 align-self-center">
+              <div style="font-size: 50px">
+                <i id="star1" class="selectStars fa fa-star lit"></i>
+                <i id="star2" class="selectStars fa fa-star"></i>
+                <i id="star3" class="selectStars fa fa-star"></i>
+                <i id="star4" class="selectStars fa fa-star"></i>
+                <i id="star5" class="selectStars fa fa-star"></i>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit Review
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <h2>Reviews</h2>
+
+      <div id="reviews"></div>
+    </div>
+
+    <script src="dist/app.js"></script>
+  </body>
 </html>

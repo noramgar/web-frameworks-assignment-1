@@ -1,0 +1,21 @@
+body {
+    font-size: x-large;
+    margin-top: 50px;
+}
+
+.review {
+    padding: 10px;
+    margin: 25px;
+}
+
+span {
+    font-size: medium;
+}
+
+.lit {
+    color:yellow;
+}
+
+i {
+    margin: 2px;
+}
